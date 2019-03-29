@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description  = "RangeControl allows to select range values from min to max range."
 
   s.homepage     = "https://github.com/AlexeyIS/RangeControl"
-  #s.screenshots  = "https://github.com/AlexeyIS/RangeControl/blob/master/screenshot1.gif", "https://github.com/AlexeyIS/RangeControl/blob/master/screenshot2.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/AlexeyIS/RangeControl/master/screenshot1.png", "https://raw.githubusercontent.com/AlexeyIS/RangeControl/master/screenshot2.gif", "https://raw.githubusercontent.com/AlexeyIS/RangeControl/master/screenshot3.gif
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
