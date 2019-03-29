@@ -15,7 +15,7 @@ class RangeControlThumbLayer: CALayer {
     
     var isLeft = false
     var highlighted: Bool = false
-
+    
     override func action(forKey event: String) -> CAAction? {
         if(event == "position"){  return nil }
         return super.action(forKey: event)
@@ -50,7 +50,7 @@ class RangeControlThumbLayer: CALayer {
                 arrow.move(to: CGPoint(x: center.x - arrowSize.width/2.0, y: center.y))
                 arrow.addLine(to: CGPoint(x: arrowRect.origin.x + arrowSize.width, y: arrowRect.origin.y + arrowRect.height))
             }
-        
+            
             ctx.setLineWidth(2.5)
             ctx.setLineCap(.round)
             ctx.setStrokeColor(UIColor.white.cgColor)
@@ -77,7 +77,7 @@ class RangeControlTrackLayer: CALayer {
             let upperValuePosition = CGFloat(slider.positionForValue(slider.upValue))
             //Cut rect
             let rect = CGRect(x: lowerValuePosition - slider.thumbWidth/2.0, y: slider.margin, width: upperValuePosition - lowerValuePosition + slider.thumbWidth, height: bounds.height - slider.margin*2 )
-
+            
             let cutout = UIBezierPath(rect: rect)
             path.append(cutout.reversing())
             ctx.addPath(path.cgPath)
@@ -90,7 +90,7 @@ class RangeControlTrackLayer: CALayer {
             //Frame borders
             let border = CGRect(x: lowerValuePosition, y: 0, width: upperValuePosition - lowerValuePosition , height: bounds.height)
             let borderPath = UIBezierPath(rect: border)
-
+            
             let borderCut = CGRect(x: lowerValuePosition, y: 1, width: upperValuePosition - lowerValuePosition , height: bounds.height-2)
             let borderCutPath = UIBezierPath(rect: borderCut)
             
@@ -103,8 +103,9 @@ class RangeControlTrackLayer: CALayer {
     }
 }
 
+public typealias OnRangeValueChanged = ((_ low:Float, _ up:Float)->Void)
 
-class RangeControl: UIControl{
+open class RangeControl: UIControl{
     
     static let height = CGFloat(50.0)
     let margin = CGFloat(4.0)
@@ -112,48 +113,51 @@ class RangeControl: UIControl{
     private let trackLayer = RangeControlTrackLayer()
     private let lowThumbLayer = RangeControlThumbLayer()
     private let upThumbLayer = RangeControlThumbLayer()
-    let backgroundView = UIView()
+    public let backgroundView = UIStackView()
     private let contentView = UIView()
-
+    
     private  var previousLocation = CGPoint()
     
-    var minValue:Float = 0.0 { didSet { updateLayerFrames() } }
-    var maxValue:Float = 1.0 { didSet { updateLayerFrames() } }
-    var lowValue:Float = 0.8 { didSet { updateLayerFrames() } }
-    var upValue:Float = 1.0 { didSet {  updateLayerFrames() } }
+    open var minValue:Float = 0.0 { didSet { updateLayerFrames() } }
+    open var maxValue:Float = 1.0 { didSet { updateLayerFrames() } }
+    open var lowValue:Float = 0.8 { didSet { updateLayerFrames() } }
+    open var upValue:Float = 1.0 { didSet {  updateLayerFrames() } }
+    open var onRangeValueChanged: OnRangeValueChanged?
     
-    var trackColor: UIColor = UIColor.lightGray.withAlphaComponent(0.45) {
+    open var trackColor: UIColor = UIColor.lightGray.withAlphaComponent(0.45) {
         didSet { trackLayer.setNeedsDisplay() }
     }
     
-    var thumbColor: UIColor =  UIColor.lightGray.withAlphaComponent(0.95) {
+    open var thumbColor: UIColor =  UIColor.lightGray.withAlphaComponent(0.95) {
         didSet {
             lowThumbLayer.setNeedsDisplay()
             upThumbLayer.setNeedsDisplay()
         }
     }
     
-    var thumbWidth:CGFloat{
+    open var thumbWidth:CGFloat{
         return CGFloat(bounds.height/4.0)
     }
-
-    var thumbHeight:CGFloat{
+    
+    open var thumbHeight:CGFloat{
         return CGFloat(bounds.height)
     }
     
-    override var frame: CGRect { didSet { updateLayerFrames() } }
+    override open var frame: CGRect { didSet { updateLayerFrames() } }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        print("++++++++INIT")
         setup()
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         updateLayerFrames()
     }
@@ -161,14 +165,14 @@ class RangeControl: UIControl{
     private func setup()  {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-
+        
         addSubview(backgroundView)
         backgroundView.isUserInteractionEnabled = false
         backgroundView.topAnchor.constraint(equalTo: self.topAnchor, constant: margin).isActive = true
         backgroundView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -margin).isActive = true
         backgroundView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
         backgroundView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0).isActive = true
-        
+        setNeedsLayout()
         contentView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(contentView)
         contentView.frame = bounds
@@ -183,8 +187,8 @@ class RangeControl: UIControl{
         trackLayer.isOpaque = false
         lowThumbLayer.isOpaque = false
         upThumbLayer.isOpaque = false
-
-
+        
+        
         lowThumbLayer.isLeft = true
         contentView.layer.addSublayer(trackLayer)
         contentView.layer.addSublayer(lowThumbLayer)
@@ -193,33 +197,39 @@ class RangeControl: UIControl{
         lowThumbLayer.rangeControl = self
         upThumbLayer.rangeControl = self
         trackLayer.rangeControl = self
-
+        
         trackLayer.contentsScale = UIScreen.main.scale
         lowThumbLayer.contentsScale = UIScreen.main.scale
         upThumbLayer.contentsScale = UIScreen.main.scale
+        setNeedsDisplay()
     }
     
-    private func updateLayerFrames() {
-        trackLayer.frame = bounds.insetBy(dx: 0.0, dy: 0.0)
+    open func updateLayerFrames() {
+        if(minValue == Float.nan || lowValue == Float.nan || upValue == Float.nan || maxValue == Float.nan){
+            return
+        }
+        
+        trackLayer.frame = bounds
         
         let lowThumbCenter = CGFloat(positionForValue(lowValue))
         let upThumbCenter = CGFloat(positionForValue(upValue))
         lowThumbLayer.frame = CGRect(x: lowThumbCenter - thumbWidth / 2.0, y: 0.0, width: thumbWidth, height: thumbHeight)
         upThumbLayer.frame = CGRect(x: upThumbCenter - thumbWidth / 2.0, y: 0.0, width: thumbWidth, height: thumbHeight)
-
+        
         trackLayer.setNeedsDisplay()
         lowThumbLayer.setNeedsDisplay()
         upThumbLayer.setNeedsDisplay()
+        onRangeValueChanged?(lowValue,upValue)
     }
     
     func positionForValue(_ value: Float) -> Float {
         return Float(bounds.width - thumbWidth) * (value - minValue) /
             (maxValue - minValue) + Float(thumbWidth / 2.0)
     }
-
-    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-        previousLocation = touch.location(in: self)
     
+    override open func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        previousLocation = touch.location(in: self)
+        
         if lowThumbLayer.frame.contains(previousLocation) {
             lowThumbLayer.highlighted = true
         } else if upThumbLayer.frame.contains(previousLocation) {
@@ -237,20 +247,20 @@ class RangeControl: UIControl{
         return Float.minimum(Float.maximum(value, lowerValue), upperValue)
     }
     
-    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+    override open func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         lowThumbLayer.highlighted = false
         upThumbLayer.highlighted = false
     }
     
     
-    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override open func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let location = touch.location(in: self)
         // 1. Determine by how much the user has dragged
         let deltaLocation = Float(location.x - previousLocation.x)
         let deltaValue = (maxValue - minValue) * deltaLocation / Float(bounds.width - thumbWidth)
         
         previousLocation = location
-
+        
         // 2. Update the values
         if lowThumbLayer.highlighted {
             lowValue += deltaValue
@@ -262,7 +272,7 @@ class RangeControl: UIControl{
             let upValueTmp = boundValue(upValue, toLowerValue: lowValue + 0.02, upperValue: maxValue)
             upValue = Float.minimum(upValueTmp, 1.0)
         }
-
+        
         // 3. Update the UI
         CATransaction.begin()
         CATransaction.setDisableActions(false)
