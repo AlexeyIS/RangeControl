@@ -1,0 +1,16 @@
+PODS:
+  - RangeControl (0.0.3)
+
+DEPENDENCIES:
+  - RangeControl
+
+SPEC REPOS:
+  https://github.com/AlexeyIS/RCPodSpecs.git:
+    - RangeControl
+
+SPEC CHECKSUMS:
+  RangeControl: 986ea268e4eb72c1527f394daeaccaffd520625e
+
+PODFILE CHECKSUM: ccd6a7f2e28bfaf3bd8644edc5314af7e3e69748
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1231212A19B679E4D47D6BFD3DF5CAF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		14A4965F6F63C05E689D1C7878E976AB /* RangeControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AF08BB601F56FE040CF4CA1680B002 /* RangeControl-dummy.m */; };
+		1FF295E4128D350F2E89B71E9D125EC3 /* RangeControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DE5B038E9E561B9113A9973FECDEF7 /* RangeControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		482556BBA426E3081303DC0ED1D116FA /* Pods-RangeControlExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4516C6759402B3EDCFF02CA0458E5C8 /* Pods-RangeControlExample-dummy.m */; };
+		5CB8ECFB2F083857FD277AE231882AA1 /* RangeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB954DC14A06AD852E2A325FE89C5618 /* RangeControl.swift */; };
+		734DEB18271C4EB4ED56CD22600D259E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		DD52E644562B28DFE3CF45B2C5741C55 /* Pods-RangeControlExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F0369FABCEBEE0E29F187A6B2F2FE54 /* Pods-RangeControlExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F431807CEF258ABF7B52E2F2C75859A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C39E8D95FF0DE965CF1CC7A5A8781667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 523229D3359C9B2A1C75AC5CAB512BC9;
+			remoteInfo = RangeControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20AF08BB601F56FE040CF4CA1680B002 /* RangeControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RangeControl-dummy.m"; sourceTree = "<group>"; };
+		2F0369FABCEBEE0E29F187A6B2F2FE54 /* Pods-RangeControlExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RangeControlExample-umbrella.h"; sourceTree = "<group>"; };
+		3A6CD6C683A5E3DAE91C7EF9C15A22D2 /* RangeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RangeControl.framework; path = RangeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		55F7FCCE67CB65D35476BC7D64CC66EB /* RangeControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RangeControl.modulemap; sourceTree = "<group>"; };
+		74481C1015FD74CC5B7C6C25AC77D6C2 /* Pods-RangeControlExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RangeControlExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C7329CC52742AAD7C30EFBA3806A9A9 /* Pods-RangeControlExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RangeControlExample.debug.xcconfig"; sourceTree = "<group>"; };
+		98EE4B64EFE198ADC82A92450FB97C5E /* RangeControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RangeControl-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A20030A7A85CD007F7EBE2115702A346 /* RangeControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RangeControl-prefix.pch"; sourceTree = "<group>"; };
+		ADB5D7305F292456C6C5F9EC0CF57502 /* Pods-RangeControlExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RangeControlExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		B7E6FAD09DA076BD59CA546832FCC746 /* Pods-RangeControlExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RangeControlExample-Info.plist"; sourceTree = "<group>"; };
+		BB954DC14A06AD852E2A325FE89C5618 /* RangeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeControl.swift; path = RangeControl/RangeControl.swift; sourceTree = "<group>"; };
+		CAF87FBDD3EE2543AABA1A63AF4A928A /* Pods-RangeControlExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RangeControlExample-frameworks.sh"; sourceTree = "<group>"; };
+		CC26B9DF1A436369864FD38499E94A0E /* Pods_RangeControlExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RangeControlExample.framework; path = "Pods-RangeControlExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA90F795548B3234C46A5220C21C99 /* Pods-RangeControlExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RangeControlExample.modulemap"; sourceTree = "<group>"; };
+		CE5326E097499D5CD62B80F61067747F /* Pods-RangeControlExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RangeControlExample.release.xcconfig"; sourceTree = "<group>"; };
+		D4F01B56A0E6C27893A067223A1EA0E9 /* RangeControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RangeControl.xcconfig; sourceTree = "<group>"; };
+		E2DE5B038E9E561B9113A9973FECDEF7 /* RangeControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RangeControl-umbrella.h"; sourceTree = "<group>"; };
+		E4516C6759402B3EDCFF02CA0458E5C8 /* Pods-RangeControlExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RangeControlExample-dummy.m"; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8AE6F7405689155AB8ADA3CDB8FC02C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734DEB18271C4EB4ED56CD22600D259E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48A22945BBB722497D426CC5F0AA270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F431807CEF258ABF7B52E2F2C75859A7 /* Foundation.framework in Frameworks */,
+				1231212A19B679E4D47D6BFD3DF5CAF1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03FCE88098553F7835B61D657590FA1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC26B9DF1A436369864FD38499E94A0E /* Pods_RangeControlExample.framework */,
+				3A6CD6C683A5E3DAE91C7EF9C15A22D2 /* RangeControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		274A6950D94757A5DE6DD93DD7834E7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F7FCCE67CB65D35476BC7D64CC66EB /* RangeControl.modulemap */,
+				D4F01B56A0E6C27893A067223A1EA0E9 /* RangeControl.xcconfig */,
+				20AF08BB601F56FE040CF4CA1680B002 /* RangeControl-dummy.m */,
+				98EE4B64EFE198ADC82A92450FB97C5E /* RangeControl-Info.plist */,
+				A20030A7A85CD007F7EBE2115702A346 /* RangeControl-prefix.pch */,
+				E2DE5B038E9E561B9113A9973FECDEF7 /* RangeControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RangeControl";
+			sourceTree = "<group>";
+		};
+		2F718BCFE5E926DDF2F5E7E5CAA73209 /* Pods-RangeControlExample */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA90F795548B3234C46A5220C21C99 /* Pods-RangeControlExample.modulemap */,
+				74481C1015FD74CC5B7C6C25AC77D6C2 /* Pods-RangeControlExample-acknowledgements.markdown */,
+				ADB5D7305F292456C6C5F9EC0CF57502 /* Pods-RangeControlExample-acknowledgements.plist */,
+				E4516C6759402B3EDCFF02CA0458E5C8 /* Pods-RangeControlExample-dummy.m */,
+				CAF87FBDD3EE2543AABA1A63AF4A928A /* Pods-RangeControlExample-frameworks.sh */,
+				B7E6FAD09DA076BD59CA546832FCC746 /* Pods-RangeControlExample-Info.plist */,
+				2F0369FABCEBEE0E29F187A6B2F2FE54 /* Pods-RangeControlExample-umbrella.h */,
+				7C7329CC52742AAD7C30EFBA3806A9A9 /* Pods-RangeControlExample.debug.xcconfig */,
+				CE5326E097499D5CD62B80F61067747F /* Pods-RangeControlExample.release.xcconfig */,
+			);
+			name = "Pods-RangeControlExample";
+			path = "Target Support Files/Pods-RangeControlExample";
+			sourceTree = "<group>";
+		};
+		884B845190DCF9AC797CF2D33F0CA2EC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F718BCFE5E926DDF2F5E7E5CAA73209 /* Pods-RangeControlExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		967E9796A9C521EEC6D4013109519636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5D4E21D0863C4714D1D0552047F2E62 /* RangeControl */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				967E9796A9C521EEC6D4013109519636 /* Pods */,
+				03FCE88098553F7835B61D657590FA1B /* Products */,
+				884B845190DCF9AC797CF2D33F0CA2EC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5D4E21D0863C4714D1D0552047F2E62 /* RangeControl */ = {
+			isa = PBXGroup;
+			children = (
+				BB954DC14A06AD852E2A325FE89C5618 /* RangeControl.swift */,
+				274A6950D94757A5DE6DD93DD7834E7C /* Support Files */,
+			);
+			name = RangeControl;
+			path = RangeControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5B3DA4EB22DC2C88A17CD8EC100A6140 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52E644562B28DFE3CF45B2C5741C55 /* Pods-RangeControlExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6914755266B31B09A645CA379594C37F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF295E4128D350F2E89B71E9D125EC3 /* RangeControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		523229D3359C9B2A1C75AC5CAB512BC9 /* RangeControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB9338E3CE7D2A340D957EE106C688C /* Build configuration list for PBXNativeTarget "RangeControl" */;
+			buildPhases = (
+				6914755266B31B09A645CA379594C37F /* Headers */,
+				EB2B6A98AA3E4ABDBBC2E2F1FD2BE955 /* Sources */,
+				E48A22945BBB722497D426CC5F0AA270 /* Frameworks */,
+				8C3EFF38F9BD00B36A3A16AC225DE54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RangeControl;
+			productName = RangeControl;
+			productReference = 3A6CD6C683A5E3DAE91C7EF9C15A22D2 /* RangeControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98F8692761F2EECD7FB69DA55F21C443 /* Pods-RangeControlExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF7769CAC3B791680F4FC2DB61AF155 /* Build configuration list for PBXNativeTarget "Pods-RangeControlExample" */;
+			buildPhases = (
+				5B3DA4EB22DC2C88A17CD8EC100A6140 /* Headers */,
+				B3CAF69F0F88CA7270CA4D3D350EA893 /* Sources */,
+				D8AE6F7405689155AB8ADA3CDB8FC02C /* Frameworks */,
+				00D2EF30C23F294F0A2E345AF1062B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7D81918B7CB3AC8081B5E1B8D026099 /* PBXTargetDependency */,
+			);
+			name = "Pods-RangeControlExample";
+			productName = "Pods-RangeControlExample";
+			productReference = CC26B9DF1A436369864FD38499E94A0E /* Pods_RangeControlExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 03FCE88098553F7835B61D657590FA1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98F8692761F2EECD7FB69DA55F21C443 /* Pods-RangeControlExample */,
+				523229D3359C9B2A1C75AC5CAB512BC9 /* RangeControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00D2EF30C23F294F0A2E345AF1062B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3EFF38F9BD00B36A3A16AC225DE54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3CAF69F0F88CA7270CA4D3D350EA893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482556BBA426E3081303DC0ED1D116FA /* Pods-RangeControlExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2B6A98AA3E4ABDBBC2E2F1FD2BE955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A4965F6F63C05E689D1C7878E976AB /* RangeControl-dummy.m in Sources */,
+				5CB8ECFB2F083857FD277AE231882AA1 /* RangeControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7D81918B7CB3AC8081B5E1B8D026099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RangeControl;
+			target = 523229D3359C9B2A1C75AC5CAB512BC9 /* RangeControl */;
+			targetProxy = C39E8D95FF0DE965CF1CC7A5A8781667 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		881F70C6B35BFB1FBF346EAC5AB4FB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5326E097499D5CD62B80F61067747F /* Pods-RangeControlExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RangeControlExample/Pods-RangeControlExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RangeControlExample/Pods-RangeControlExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FE3339BA45A63A932490FDD954F5D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7329CC52742AAD7C30EFBA3806A9A9 /* Pods-RangeControlExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RangeControlExample/Pods-RangeControlExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RangeControlExample/Pods-RangeControlExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91831DF4E1C5B065586CE46670EAAF36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F01B56A0E6C27893A067223A1EA0E9 /* RangeControl.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RangeControl/RangeControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RangeControl/RangeControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RangeControl/RangeControl.modulemap";
+				PRODUCT_MODULE_NAME = RangeControl;
+				PRODUCT_NAME = RangeControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDAEC6F86D8E278C517C34E1B3690886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F01B56A0E6C27893A067223A1EA0E9 /* RangeControl.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RangeControl/RangeControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RangeControl/RangeControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RangeControl/RangeControl.modulemap";
+				PRODUCT_MODULE_NAME = RangeControl;
+				PRODUCT_NAME = RangeControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CB9338E3CE7D2A340D957EE106C688C /* Build configuration list for PBXNativeTarget "RangeControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAEC6F86D8E278C517C34E1B3690886 /* Debug */,
+				91831DF4E1C5B065586CE46670EAAF36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF7769CAC3B791680F4FC2DB61AF155 /* Build configuration list for PBXNativeTarget "Pods-RangeControlExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE3339BA45A63A932490FDD954F5D05 /* Debug */,
+				881F70C6B35BFB1FBF346EAC5AB4FB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
+				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

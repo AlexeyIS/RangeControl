@@ -1,0 +1,6 @@
+framework module RangeControl {
+  umbrella header "RangeControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
