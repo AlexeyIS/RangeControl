@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         rangeControl.onRangeValueChanged = { (low,up) in
             self.lowLabel.text = low.description
             self.upLabel.text = up.description
+            print("Low: \(low) up: \(up)")
         }
     }
 }
