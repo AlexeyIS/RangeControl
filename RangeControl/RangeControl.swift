@@ -153,7 +153,6 @@ open class RangeControl: UIControl{
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        print("++++++++INIT")
         setup()
     }
     
