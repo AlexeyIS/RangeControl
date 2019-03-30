@@ -50,10 +50,6 @@ pod 'RangeControl'
 
 * **Alexey Ledovskiy** - *Initial work* - [RangeControl](https://github.com/AlexeyIS/RangeControl)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
 ## Donations
 Any amount you can donate today to support the project would be greatly appreciated.
 <dl>
@@ -64,3 +60,7 @@ Any amount you can donate today to support the project would be greatly apprecia
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form>
 </dl>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
