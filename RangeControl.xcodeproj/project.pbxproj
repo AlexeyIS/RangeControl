@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4157D93625FD6DE800791F67 /* UITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157D93525FD6DE800791F67 /* UITest.swift */; };
 		41FBE982224DEF3600C6AD7E /* RangeControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FBE980224DEF3600C6AD7E /* RangeControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41FBE989224DEF5100C6AD7E /* RangeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FBE988224DEF5100C6AD7E /* RangeControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4157D93325FD6DE800791F67 /* UITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4157D93525FD6DE800791F67 /* UITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITest.swift; sourceTree = "<group>"; };
+		4157D93725FD6DE800791F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41FBE97D224DEF3600C6AD7E /* RangeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RangeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FBE980224DEF3600C6AD7E /* RangeControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeControl.h; sourceTree = "<group>"; };
 		41FBE981224DEF3600C6AD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -19,6 +23,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4157D93025FD6DE800791F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FBE97A224DEF3600C6AD7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +40,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4157D93425FD6DE800791F67 /* UITest */ = {
+			isa = PBXGroup;
+			children = (
+				4157D93525FD6DE800791F67 /* UITest.swift */,
+				4157D93725FD6DE800791F67 /* Info.plist */,
+			);
+			path = UITest;
+			sourceTree = "<group>";
+		};
 		41FBE973224DEF3600C6AD7E = {
 			isa = PBXGroup;
 			children = (
 				41FBE97F224DEF3600C6AD7E /* RangeControl */,
+				4157D93425FD6DE800791F67 /* UITest */,
 				41FBE97E224DEF3600C6AD7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				41FBE97D224DEF3600C6AD7E /* RangeControl.framework */,
+				4157D93325FD6DE800791F67 /* UITest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +91,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4157D93225FD6DE800791F67 /* UITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4157D93A25FD6DE800791F67 /* Build configuration list for PBXNativeTarget "UITest" */;
+			buildPhases = (
+				4157D92F25FD6DE800791F67 /* Sources */,
+				4157D93025FD6DE800791F67 /* Frameworks */,
+				4157D93125FD6DE800791F67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UITest;
+			productName = UITest;
+			productReference = 4157D93325FD6DE800791F67 /* UITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		41FBE97C224DEF3600C6AD7E /* RangeControl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41FBE985224DEF3600C6AD7E /* Build configuration list for PBXNativeTarget "RangeControl" */;
@@ -93,9 +132,13 @@
 		41FBE974224DEF3600C6AD7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Alexey Ledovskiy";
 				TargetAttributes = {
+					4157D93225FD6DE800791F67 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					41FBE97C224DEF3600C6AD7E = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
@@ -116,11 +159,19 @@
 			projectRoot = "";
 			targets = (
 				41FBE97C224DEF3600C6AD7E /* RangeControl */,
+				4157D93225FD6DE800791F67 /* UITest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4157D93125FD6DE800791F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FBE97B224DEF3600C6AD7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +182,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4157D92F25FD6DE800791F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4157D93625FD6DE800791F67 /* UITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FBE979224DEF3600C6AD7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +201,44 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4157D93825FD6DE800791F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PS9F2MA7E5;
+				INFOPLIST_FILE = UITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledovskiy.RangeControlUITest.UITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4157D93925FD6DE800791F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PS9F2MA7E5;
+				INFOPLIST_FILE = UITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledovskiy.RangeControlUITest.UITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		41FBE983224DEF3600C6AD7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +423,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4157D93A25FD6DE800791F67 /* Build configuration list for PBXNativeTarget "UITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4157D93825FD6DE800791F67 /* Debug */,
+				4157D93925FD6DE800791F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41FBE977224DEF3600C6AD7E /* Build configuration list for PBXProject "RangeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
